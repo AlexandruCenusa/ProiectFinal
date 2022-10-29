@@ -72,8 +72,8 @@ public class MagazinWindow {
         frame.setContentPane(new MagazinWindow().panelMagazin);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
-        frame.setPreferredSize(new Dimension(400, 500));
-        frame.setMinimumSize(new Dimension(400, 500));
+        frame.setPreferredSize(new Dimension(900, 700));
+        frame.setMinimumSize(new Dimension(900, 700));
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 

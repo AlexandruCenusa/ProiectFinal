@@ -13,6 +13,7 @@ public class MainWindow {
     private JButton btnMagazin;
     private JButton btnGaraj;
     private JButton btnExit;
+    private JPanel panelMeniuInterfata;
 
     public MainWindow() {
         Scanner scan = new Scanner(System.in);
@@ -66,8 +67,8 @@ public class MainWindow {
         frame.setContentPane(new MainWindow().panelMeniu);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.setPreferredSize(new Dimension(400, 500));
-        frame.setMinimumSize(new Dimension(400, 500));
+        frame.setPreferredSize(new Dimension(600, 600));
+        frame.setMinimumSize(new Dimension(600, 600));
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 

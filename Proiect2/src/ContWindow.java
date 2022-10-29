@@ -22,6 +22,8 @@ public class ContWindow {
     private JTextField txtRetragere;
     private JTextField txtDepunere;
     private JButton btnRefresh;
+    private JPanel panelContInterface;
+    private JButton btnLogOut;
 
     public void refreshName() {
         lblNume.setText("Salut " + cont.getNume());
@@ -101,8 +103,8 @@ public class ContWindow {
         frame.setContentPane(new ContWindow().panelCont);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
-        frame.setPreferredSize(new Dimension(600, 500));
-        frame.setMinimumSize(new Dimension(600, 500));
+        frame.setPreferredSize(new Dimension(800, 400));
+        frame.setMinimumSize(new Dimension(800, 400));
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
