@@ -18,7 +18,7 @@ public class MainWindow {
     public MainWindow() {
         Scanner scan = new Scanner(System.in);
 
-        //Numarul maxim de masini pe care le poate stoca AutoHouse-ul
+        LoginState loginState = LoginState.getInstance();
 
         //Instantiere clasa ContBancar
         ContBancar cont = new ContBancar("Stefan", 6000);
@@ -27,16 +27,13 @@ public class MainWindow {
         ArrayList<Auto> masini = new ArrayList<Auto>();
         ArrayList<Auto> garaj = new ArrayList<Auto>();
 
-        masini.add(new Auto("Skoda", "Octavia II", 200000, 5500.0));
-        masini.add(new Auto("Dacia", "Logan", 360000, 2000.0));
-        masini.add(new Auto("Audi", "A4", 180000, 6200.0));
-        masini.add(new Auto("BMW", "F10", 120000, 10000.0));
-        masini.add(new Auto("Skoda", "Octavia III", 80000, 10000.0));
-
         btnContBancar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ContWindow.open(cont);
+                if(loginState.getState() == false)
+                    LogInWindow.open();
+                else
+                    ContWindow.open(cont);
             }
         });
 
