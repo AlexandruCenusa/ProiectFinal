@@ -3,10 +3,10 @@ Proiect final POO
 
 Changelog:
 
-Version 0.0: 
-  -proiect 2 complet
+Version 0.0: (Stephan)
+  -proiect 2 complet 
   
-Version 0.1:
+Version 0.1: (Nick)
 -added a new directory: Icons
 -revamped graphical interface in the following windows:
 	-Meniu(MainWindow.java,MainWindow.form)
