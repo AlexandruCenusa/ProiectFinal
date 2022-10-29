@@ -11,7 +11,7 @@ Version 0.1:
 -revamped graphical interface in the following windows:
 	-Meniu(MainWindow.java,MainWindow.form)
 	-ContBancar(ContWindow.java,ContWindow.form)
-      -added "Log Out" button
+      		-added "Log Out" button
 	-AutoHouse(MagazinWindow.java,MagazinWindow.form)
 -added 2 new windows: LogIn and Register
 
