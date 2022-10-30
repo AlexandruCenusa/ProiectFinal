@@ -1,14 +1,9 @@
+import Proiect2.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import javax.swing.plaf.nimbus.State;
-import java.sql.*;
-import java.util.concurrent.ExecutionException;
 
 public class LogInWindow {
 
@@ -33,37 +28,29 @@ public class LogInWindow {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nume = txtUsername.getText();
-                char[] parola = txtPassword.getPassword();
+                char[] parolaC = txtPassword.getPassword();
 
-                try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/proiect", "root", "umfst2022");
-                    Statement stm = con.createStatement();
+                String parola = new String(parolaC);
 
-                    //String sql = "insert into cont values ('Stefan', 'slow4run', 10000)";
+                DataBase.setConnection();
+                String result = DataBase.selectLogin(nume, parola);
 
-                    //stm.executeUpdate(sql);
 
-                    ResultSet res = stm.executeQuery("select * from cont");
-
-                    if(res.next())
-                        System.out.println(res.getString("nume") + " " + res.getString("parola"));
-
-                } catch (SQLException ex) {
-                    System.out.println("ERROR");
+                if(result == null)
+                    JOptionPane.showMessageDialog(null, "Datele introduse nu sunt corecte!");
+                else {
+                    LoginState.setState(true);
+                    LoginState.setNume(nume);
+                    frame.dispose();
+                    ContWindow.open();
                 }
-
-
-
-
-
-
-
             }
         });
 
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                frame.dispose();
                 RegisterWindow.open();
             }
         });

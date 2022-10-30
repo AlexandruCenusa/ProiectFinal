@@ -85,8 +85,8 @@ public class ManageWindow {
         frame.setContentPane(new ManageWindow().panelManager);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
-        frame.setPreferredSize(new Dimension(400, 500));
-        frame.setMinimumSize(new Dimension(400, 500));
+        frame.setPreferredSize(new Dimension(500, 700));
+        frame.setMinimumSize(new Dimension(500, 700));
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 

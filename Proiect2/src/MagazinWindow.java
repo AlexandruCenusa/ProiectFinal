@@ -65,10 +65,9 @@ public class MagazinWindow {
     }
 
 
-    public static void open(ArrayList<Auto> m, ArrayList<Auto> g, ContBancar c) {
+    public static void open(ArrayList<Auto> m, ArrayList<Auto> g) {
         masini = m;
         garaj = g;
-        cont = c;
         frame.setContentPane(new MagazinWindow().panelMagazin);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 

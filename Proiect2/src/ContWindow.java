@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 
 import Proiect2.*;
 public class ContWindow {
-    private static ContBancar cont;
     private static JFrame frame = new JFrame();
     private JPanel panelCont;
     private JButton btnExit;
@@ -15,7 +14,6 @@ public class ContWindow {
     private JButton btnDepunere;
     private JButton btnRetragere;
     private JButton btnName;
-    private JLabel lblEditName;
     private JLabel lblRetragere;
     private JLabel lblDepunere;
     private JTextField txtNume;
@@ -26,32 +24,19 @@ public class ContWindow {
     private JButton btnLogOut;
 
     public void refreshName() {
-        lblNume.setText("Salut " + cont.getNume());
+        DataBase.setConnection();
+        String result = LoginState.getNume();
+        lblNume.setText("Salut " + result);
     }
 
     public void refreshSold() {
-        String sold = "Sold: "+cont.getSold()+" euro";
+        String sold = DataBase.selectFromDB(LoginState.getNume(), "sold");
         lblSold.setText(sold);
     }
 
     public ContWindow() {
         refreshName();
         refreshSold();
-
-        btnName.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                if(txtNume.getText().isEmpty())
-                    JOptionPane.showMessageDialog(null, "Introduceti un nume nou!");
-                else {
-                    String text = txtNume.getText();
-                    cont.setName(text);
-                    refreshName();
-                    txtNume.setText("");
-                }
-            }
-        });
 
         btnRetragere.addActionListener(new ActionListener() {
             @Override
@@ -60,7 +45,7 @@ public class ContWindow {
                     JOptionPane.showMessageDialog(null, "Introduceti o suma pentru retragere!");
                 else {
                     int bani = Integer.parseInt(txtRetragere.getText());
-                    cont.retragereNumerar(bani);
+                    ContBancar.retragereNumerar(bani);
                     refreshSold();
                     txtRetragere.setText("");
                 }
@@ -74,7 +59,7 @@ public class ContWindow {
                     JOptionPane.showMessageDialog(null, "Introduceti o suma pentru depunere!");
                 else {
                     int bani = Integer.parseInt(txtDepunere.getText());
-                    cont.depunereNumerar(bani);
+                    ContBancar.depunereNumerar(bani);
                     refreshSold();
                     txtDepunere.setText("");
                 }
@@ -95,16 +80,23 @@ public class ContWindow {
                 refreshName();
             }
         });
+
+        btnLogOut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginState.setState(false);
+                LoginState.setNume(null);
+                frame.dispose();
+            }
+        });
     }
 
-    public static void open(ContBancar c) {
-        cont = c;
-
+    public static void open() {
         frame.setContentPane(new ContWindow().panelCont);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
-        frame.setPreferredSize(new Dimension(800, 400));
-        frame.setMinimumSize(new Dimension(800, 400));
+        frame.setPreferredSize(new Dimension(800, 500));
+        frame.setMinimumSize(new Dimension(800, 500));
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 

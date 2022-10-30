@@ -1,7 +1,9 @@
+import Proiect2.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class RegisterWindow {
 
@@ -19,6 +21,30 @@ public class RegisterWindow {
     private JLabel registerIcon;
 
     public RegisterWindow() {
+
+        btnRegister.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nume = txtUsername.getText();
+                String parola1 = new String(txtPassword.getPassword());
+                String parola2 = new String(txtConfirmPassword.getPassword());
+
+                DataBase.setConnection();
+                if(txtUsername.getText().isEmpty())
+                    JOptionPane.showMessageDialog(null, "Introduceti un nume!");
+                else if(DataBase.selectFromDB(nume, "nume") != null)
+                        JOptionPane.showMessageDialog(null, "Numele introdus apartine deja unui cont!");
+                    else if(!(parola1.equals(parola2)) && !(parola1.equals(null)))
+                            JOptionPane.showMessageDialog(null, "Parolele nu coincid!");
+                        else
+                            try {
+                                DataBase.insertDB(nume, parola1);
+                            } catch (SQLException ex) {
+                                System.out.println("Error Insert to DB");
+                            }
+            }
+        });
+
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

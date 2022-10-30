@@ -9,6 +9,7 @@ public class GarajWindow {
     private static ArrayList<Auto> garaj;
     private static JFrame frame = new JFrame();
     private JPanel panelGaraj;
+    private JPanel panelGarajInterface;
     private JButton btnExit;
     private JList listGaraj;
     private JButton btnRefresh;
@@ -35,7 +36,7 @@ public class GarajWindow {
 
     public static void open(ArrayList<Auto> g) {
         garaj = g;
-        frame.setContentPane(new GarajWindow().panelGaraj);
+        frame.setContentPane(new GarajWindow().panelGarajInterface);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         frame.setPreferredSize(new Dimension(400, 500));

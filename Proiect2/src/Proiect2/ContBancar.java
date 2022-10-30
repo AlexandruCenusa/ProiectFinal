@@ -1,47 +1,32 @@
 package Proiect2;
+
+import javax.xml.crypto.Data;
+
 public class ContBancar {
 
-    private final double COMISION_RETRAGERE = 0.5;
-    private double sold;
-    private String nume;
+    private static final double COMISION_RETRAGERE = 0.5;
 
     public ContBancar() {
 
     }
 
-    public ContBancar(String nume, double sold) {
-        this.nume = nume;
-        this.sold = sold;
+    public static void depunereNumerar(double sold) {
+        double soldCurent = Double.parseDouble(DataBase.selectFromDB(LoginState.getNume(), "sold"));
+        soldCurent += sold;
+        DataBase.updateSoldDB(LoginState.getNume(), soldCurent);
     }
 
-    public void depunereNumerar(double sold) {
-        this.sold += sold;
-    }
-
-    public boolean retragereNumerarC(double sold) {
-        if(this.sold >= sold+COMISION_RETRAGERE)
+    public static boolean retragereNumerarC(double sold) {
+        double soldCurent = Double.parseDouble(DataBase.selectFromDB(LoginState.getNume(), "sold"));
+        if(soldCurent >= sold+COMISION_RETRAGERE)
             return true;
         return false;
     }
-    public void retragereNumerar(double sold) {
-        if(retragereNumerarC(sold) == true)
-            this.sold -= sold+=COMISION_RETRAGERE;
-    }
-
-    public void setName(String nume) {
-        this.nume = nume;
-    }
-
-    public String getNume() {
-        return nume;
-    }
-
-    public double getSold() {
-        return sold;
-    }
-
-    public String toString() {
-        String msg = "Nume cont: " + nume + " | Sold: " + sold;
-        return msg;
+    public static void retragereNumerar(double sold) {
+        double soldCurent = Double.parseDouble(DataBase.selectFromDB(LoginState.getNume(), "sold"));
+        if(retragereNumerarC(sold) == true) {
+            soldCurent -= sold + COMISION_RETRAGERE;
+            DataBase.updateSoldDB(LoginState.getNume(), soldCurent);
+        }
     }
 }

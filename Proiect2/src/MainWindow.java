@@ -18,10 +18,9 @@ public class MainWindow {
     public MainWindow() {
         Scanner scan = new Scanner(System.in);
 
-        LoginState loginState = LoginState.getInstance();
+        DataBase.setConnection();
 
-        //Instantiere clasa ContBancar
-        ContBancar cont = new ContBancar("Stefan", 6000);
+
 
         //Instantiere clasa Auto
         ArrayList<Auto> masini = new ArrayList<Auto>();
@@ -30,17 +29,17 @@ public class MainWindow {
         btnContBancar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(loginState.getState() == false)
+                if(LoginState.getState() == false)
                     LogInWindow.open();
                 else
-                    ContWindow.open(cont);
+                    ContWindow.open();
             }
         });
 
         btnMagazin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MagazinWindow.open(masini, garaj, cont);
+                MagazinWindow.open(masini, garaj);
             }
         });
 
