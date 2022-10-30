@@ -15,4 +15,12 @@ Version 0.1: (Nick)
 	-AutoHouse(MagazinWindow.java,MagazinWindow.form)
 -added 2 new windows: LogIn and Register
 
+Version 0.1.5: GRAPHICAL UPDATE (Nick)
+-fixed textfield/passwordfield colors
+-revamped graphical interface in:
+	-Garaj and ManageWindow
+-fixed colors visibility in labels
+-fixed colors in scroll lists
+NOTICE: -fix MangeWindow's frame height to 500 px
+
 
