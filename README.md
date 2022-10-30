@@ -22,3 +22,15 @@ Proiect final POO
 -fixed colors visibility in labels <br />
 -fixed colors in scroll lists <br />
 NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Preferred Size & Minimum Size) to 500 px <br />
+**DONE** *(Stephan)* <br/>
+
+**Version 0.2: CODE UPDATE** *(Stephan)* <br/>
+-added connectivity to the database<br/>
+-added new classes: <br/>
++DataBase to control the database <br/>
++LoginState to save the current logged-in user <br/>
+-added new functions: <br/>
++Log In / Register / Depunere Numerar / Extragere Numerar (using database) <br/>
+-the information from ContBancar was moved to the database <br/>
+-removed *Edit name* function <br/>
+-some bugs have been fixed </br>
