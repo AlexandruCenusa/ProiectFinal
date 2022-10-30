@@ -1,154 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ManageWindow">
-  <grid id="27dc6" binding="panelManager" layout-manager="GridLayoutManager" row-count="17" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelManager" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="428"/>
+      <xy x="20" y="20" width="500" height="543"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-13414042"/>
+    </properties>
     <border type="none"/>
     <children>
-      <component id="2087c" class="javax.swing.JButton" binding="btnExit">
+      <grid id="ae33b" layout-manager="GridLayoutManager" row-count="19" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="-1" height="20"/>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="500"/>
+            <preferred-size width="400" height="500"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Inchide"/>
+          <background color="-14732481"/>
         </properties>
-      </component>
-      <vspacer id="f69dc">
-        <constraints>
-          <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="18dfd" class="javax.swing.JButton" binding="btnSubmit">
-        <constraints>
-          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="-1" height="20"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Adaugare"/>
-        </properties>
-      </component>
-      <component id="860ba" class="javax.swing.JLabel" binding="lblTitlu">
-        <constraints>
-          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Adaugare masina noua"/>
-        </properties>
-      </component>
-      <vspacer id="a98cf">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="6fd05" class="javax.swing.JTextField" binding="txtKm">
-        <constraints>
-          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="300" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="ed526" class="javax.swing.JTextField" binding="txtModel">
-        <constraints>
-          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="300" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="11610" class="javax.swing.JTextField" binding="txtMarca">
-        <constraints>
-          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="300" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="37c7" class="javax.swing.JLabel" binding="lblMarca">
-        <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Marca"/>
-        </properties>
-      </component>
-      <component id="1abfb" class="javax.swing.JLabel" binding="lblModel">
-        <constraints>
-          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Model"/>
-        </properties>
-      </component>
-      <component id="851c7" class="javax.swing.JLabel" binding="lblKm">
-        <constraints>
-          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Km"/>
-        </properties>
-      </component>
-      <component id="59ac0" class="javax.swing.JTextField" binding="txtPret">
-        <constraints>
-          <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="300" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="e90f2" class="javax.swing.JLabel" binding="lblPret">
-        <constraints>
-          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Pret"/>
-        </properties>
-      </component>
-      <vspacer id="adbcb">
-        <constraints>
-          <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <scrollpane id="7f84a">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
         <border type="none"/>
         <children>
-          <component id="52740" class="javax.swing.JList" binding="listMasini">
-            <constraints/>
-            <properties/>
+          <component id="9dc6f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Masini disponibile"/>
+            </properties>
           </component>
+          <vspacer id="56044">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="699d9" class="javax.swing.JButton" binding="btnFerVechi">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Eliminare"/>
+            </properties>
+          </component>
+          <scrollpane id="7f84a">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="52740" class="javax.swing.JList" binding="listMasini">
+                <constraints/>
+                <properties>
+                  <background color="-12829636"/>
+                  <foreground color="-2763307"/>
+                  <selectionBackground color="-13414042"/>
+                  <selectionForeground color="-2763307"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <vspacer id="31aec">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="860ba" class="javax.swing.JLabel" binding="lblTitlu">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Adaugare masina noua"/>
+            </properties>
+          </component>
+          <vspacer id="a98cf">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="37c7" class="javax.swing.JLabel" binding="lblMarca">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Marca"/>
+            </properties>
+          </component>
+          <component id="11610" class="javax.swing.JTextField" binding="txtMarca">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <foreground color="-12829636"/>
+            </properties>
+          </component>
+          <component id="1abfb" class="javax.swing.JLabel" binding="lblModel">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Model"/>
+            </properties>
+          </component>
+          <component id="ed526" class="javax.swing.JTextField" binding="txtModel">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <foreground color="-12829636"/>
+            </properties>
+          </component>
+          <component id="851c7" class="javax.swing.JLabel" binding="lblKm">
+            <constraints>
+              <grid row="12" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Km"/>
+            </properties>
+          </component>
+          <component id="6fd05" class="javax.swing.JTextField" binding="txtKm">
+            <constraints>
+              <grid row="13" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <foreground color="-12829636"/>
+            </properties>
+          </component>
+          <component id="e90f2" class="javax.swing.JLabel" binding="lblPret">
+            <constraints>
+              <grid row="14" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-2763307"/>
+              <text value="Pret"/>
+            </properties>
+          </component>
+          <component id="59ac0" class="javax.swing.JTextField" binding="txtPret">
+            <constraints>
+              <grid row="15" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <foreground color="-12829636"/>
+            </properties>
+          </component>
+          <vspacer id="adbcb">
+            <constraints>
+              <grid row="16" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="2087c" class="javax.swing.JButton" binding="btnExit">
+            <constraints>
+              <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Inchide"/>
+            </properties>
+          </component>
+          <component id="18dfd" class="javax.swing.JButton" binding="btnSubmit">
+            <constraints>
+              <grid row="17" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Adaugare"/>
+            </properties>
+          </component>
+          <hspacer id="924a6">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="a5810">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="f8dc9">
+            <constraints>
+              <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="ba9d5">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
         </children>
-      </scrollpane>
-      <component id="9dc6f" class="javax.swing.JLabel">
+      </grid>
+      <hspacer id="db4b">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties>
-          <text value="Masini disponibile"/>
-        </properties>
-      </component>
-      <vspacer id="31aec">
+      </hspacer>
+      <hspacer id="2c9c">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-      </vspacer>
-      <component id="699d9" class="javax.swing.JButton" binding="btnFerVechi">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Eliminare"/>
-        </properties>
-      </component>
+      </hspacer>
     </children>
   </grid>
 </form>

@@ -41,15 +41,10 @@
             </constraints>
             <properties>
               <font name="Courier New" size="26" style="3"/>
-              <foreground color="-7895161"/>
+              <foreground color="-2763307"/>
               <text value="Meniu"/>
             </properties>
           </component>
-          <vspacer id="c1ea2">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
           <hspacer id="fc0f">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -70,7 +65,7 @@
             </constraints>
             <properties>
               <background color="-12829636"/>
-              <foreground color="-7895161"/>
+              <foreground color="-2763307"/>
               <text value="Gestionare Cont"/>
             </properties>
           </component>
@@ -84,7 +79,7 @@
             </constraints>
             <properties>
               <background color="-12829636"/>
-              <foreground color="-7895161"/>
+              <foreground color="-2763307"/>
               <text value="Magazin Auto"/>
             </properties>
           </component>
@@ -98,7 +93,7 @@
             </constraints>
             <properties>
               <background color="-12829636"/>
-              <foreground color="-7895161"/>
+              <foreground color="-2763307"/>
               <text value="Garaj"/>
             </properties>
           </component>
@@ -112,7 +107,7 @@
             </constraints>
             <properties>
               <background color="-12829636"/>
-              <foreground color="-7895161"/>
+              <foreground color="-2763307"/>
               <text value="Exit"/>
             </properties>
           </component>
@@ -139,6 +134,11 @@
           <vspacer id="ed04a">
             <constraints>
               <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="c1ea2">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
           </vspacer>
         </children>
