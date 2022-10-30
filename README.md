@@ -1,7 +1,7 @@
 # ProiectFinal
 Proiect final POO
 
-####Changelog:
+# Changelog:
 
 **Version 0.0:** *(Stephan)* <br />
   -proiect 2 complet  <br />
@@ -22,5 +22,3 @@ Proiect final POO
 -fixed colors visibility in labels <br />
 -fixed colors in scroll lists <br />
 NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Preferred Size & Minimum Size) to 500 px <br />
-
-
