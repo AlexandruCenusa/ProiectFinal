@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MagazinWindow">
+  <grid id="27dc6" binding="panelMagazin" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="744" height="704"/>
+    </constraints>
+    <properties>
+      <background color="-13414042"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="8ac61" layout-manager="GridLayoutManager" row-count="13" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="600" height="500"/>
+            <preferred-size width="600" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14732481"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3c467" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <font name="Courier New" size="12" style="0"/>
+              <foreground color="-2763307"/>
+              <text value="Masini disponibile"/>
+            </properties>
+          </component>
+          <component id="2ae1f" class="javax.swing.JButton" binding="btnRefresh">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Refresh"/>
+            </properties>
+          </component>
+          <hspacer id="723d8">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="8cb13">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <scrollpane id="1d959">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14737138"/>
+              <foreground color="-12829636"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ce7cc" class="javax.swing.JList" binding="listMasini">
+                <constraints/>
+                <properties>
+                  <background color="-12829636"/>
+                  <foreground color="-2763307"/>
+                  <selectionBackground color="-13414042"/>
+                  <selectionForeground color="-2763307"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <hspacer id="cb2ae">
+            <constraints>
+              <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="d1f73">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="f61ec" class="javax.swing.JButton" binding="btnCumparare">
+            <constraints>
+              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Cumparare"/>
+            </properties>
+          </component>
+          <component id="13b86" class="javax.swing.JButton" binding="btnManage">
+            <constraints>
+              <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Administrare Magazin"/>
+            </properties>
+          </component>
+          <component id="77569" class="javax.swing.JButton" binding="btnExit">
+            <constraints>
+              <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-12829636"/>
+              <foreground color="-2763307"/>
+              <text value="Inchide"/>
+            </properties>
+          </component>
+          <component id="3da0e" class="javax.swing.JLabel" binding="lblTitlu">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <font name="Courier New" size="26" style="3"/>
+              <foreground color="-2763307"/>
+              <text value="AutoHouse"/>
+            </properties>
+          </component>
+          <vspacer id="b3ad1">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="6af6c">
+            <constraints>
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="ef8da">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="a453f">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="2d933">
+            <constraints>
+              <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="43841">
+            <constraints>
+              <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="b2999">
+            <constraints>
+              <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <hspacer id="27c35">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="12fcb">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
