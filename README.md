@@ -21,6 +21,6 @@ Version 0.1.5: GRAPHICAL UPDATE (Nick) <br />
 	-Garaj and ManageWindow <br />
 -fixed colors visibility in labels <br />
 -fixed colors in scroll lists <br />
-NOTICE: -fix MangeWindow's frame height to 500 px <br />
+NOTICE: -change MangeWindow's frame height(changes shall be both visible in: Preferred Size & Minimum Size) to 500 px <br />
 
 
