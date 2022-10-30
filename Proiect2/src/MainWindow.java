@@ -15,16 +15,9 @@ public class MainWindow {
     private JButton btnExit;
     private JPanel panelMeniuInterfata;
 
+    private static ArrayList<Auto> masini = new ArrayList<Auto>();
     public MainWindow() {
         Scanner scan = new Scanner(System.in);
-
-        DataBase.setConnection();
-
-
-
-        //Instantiere clasa Auto
-        ArrayList<Auto> masini = new ArrayList<Auto>();
-        ArrayList<Auto> garaj = new ArrayList<Auto>();
 
         btnContBancar.addActionListener(new ActionListener() {
             @Override
@@ -39,14 +32,14 @@ public class MainWindow {
         btnMagazin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MagazinWindow.open(masini, garaj);
+                MagazinWindow.open(masini);
             }
         });
 
         btnGaraj.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GarajWindow.open(garaj);
+                GarajWindow.open();
             }
         });
 

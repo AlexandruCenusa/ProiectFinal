@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import Proiect2.*;
 public class GarajWindow {
-    private static ArrayList<Auto> garaj;
     private static JFrame frame = new JFrame();
     private JPanel panelGaraj;
     private JPanel panelGarajInterface;
@@ -15,7 +14,7 @@ public class GarajWindow {
     private JButton btnRefresh;
 
     public void refreshList() {
-        listGaraj.setListData(garaj.toArray());
+       // listGaraj.setListData(garaj.toArray());
     }
     public GarajWindow() {
         refreshList();
@@ -34,8 +33,8 @@ public class GarajWindow {
         });
     }
 
-    public static void open(ArrayList<Auto> g) {
-        garaj = g;
+    public static void open() {
+
         frame.setContentPane(new GarajWindow().panelGarajInterface);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 

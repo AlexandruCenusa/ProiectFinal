@@ -31,6 +31,7 @@ public class MagazinWindow {
                 index = listMasini.getSelectedIndex();
                 if (index == -1)
                     JOptionPane.showMessageDialog(null, "Selectati o masina!");
+                /*
                 else if (cont.retragereNumerarC(masini.get(index).getPret())) {
                     cont.retragereNumerar(masini.get(index).getPret());
                     garaj.add(masini.get(index));
@@ -39,6 +40,8 @@ public class MagazinWindow {
                     JOptionPane.showMessageDialog(null, "Tranzactie efectuata!");
                 } else
                     JOptionPane.showMessageDialog(null, "Fonduri insuficiente!");
+
+                 */
             }
         });
 
@@ -65,9 +68,8 @@ public class MagazinWindow {
     }
 
 
-    public static void open(ArrayList<Auto> m, ArrayList<Auto> g) {
+    public static void open(ArrayList<Auto> m) {
         masini = m;
-        garaj = g;
         frame.setContentPane(new MagazinWindow().panelMagazin);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 

@@ -1,4 +1,4 @@
-import Proiect2.Auto;
+import Proiect2.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,7 +44,7 @@ public class ManageWindow {
                     double pret = Double.parseDouble(txtPret.getText());
 
                     if(masini.size() <= Auto.NR_MAX) {
-                        masini.add(new Auto(marca, model, km, pret));
+                        //masini.add(new Auto(marca, model, km, pret));
                         refreshList();
                     }
                     else
@@ -72,7 +72,7 @@ public class ManageWindow {
                 if(index == -1)
                     JOptionPane.showMessageDialog(null, "Selectati o masina!");
                 else {
-                    masini.remove(index);
+                    //masini.remove(index);
                     refreshList();
                 }
             }
