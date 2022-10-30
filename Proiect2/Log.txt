@@ -1,0 +1,22 @@
+Sun Oct 30 21:03:48 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Sun Oct 30 21:04:05 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Sun Oct 30 21:04:14 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Sun Oct 30 21:04:17 EET 2022: S-a apasat butonul: 'Refresh' din fereastra: ContWindow
+Sun Oct 30 21:04:28 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: ContWindow
+Sun Oct 30 21:04:43 EET 2022: S-a apasat butonul: 'Log Out' din fereastra: ContWindow
+Sun Oct 30 21:04:46 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Sun Oct 30 21:04:47 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Sun Oct 30 21:05:09 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Sun Oct 30 21:05:15 EET 2022: S-a apasat butonul: 'Exit' din fereastra: RegisterWindow
+Sun Oct 30 21:08:57 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Sun Oct 30 21:08:58 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Sun Oct 30 21:09:06 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Sun Oct 30 21:09:12 EET 2022: S-a apasat butonul: 'Exit' din fereastra: RegisterWindow
+Sun Oct 30 22:03:32 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Sun Oct 30 22:03:34 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Sun Oct 30 22:03:53 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Sun Oct 30 22:04:04 EET 2022: S-a apasat butonul: 'Exit' din fereastra: MainWindow
+Sun Oct 30 22:04:39 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Sun Oct 30 22:04:42 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Sun Oct 30 22:04:53 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Sun Oct 30 22:05:02 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow

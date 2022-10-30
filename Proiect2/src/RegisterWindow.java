@@ -1,4 +1,6 @@
-import Proiect2.*;
+import Proiect3.*;
+import myLogging.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -25,6 +27,9 @@ public class RegisterWindow {
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnRegister.getText()+"' din fereastra: RegisterWindow";
+                Logger.setLog(str);
+
                 String nume = txtUsername.getText();
                 String parola1 = new String(txtPassword.getPassword());
                 String parola2 = new String(txtConfirmPassword.getPassword());
@@ -39,6 +44,9 @@ public class RegisterWindow {
                         else
                             try {
                                 DataBase.insertDB(nume, parola1);
+                                JOptionPane.showMessageDialog(null, "Utilizatorul a fost inregistrat cu succes!");
+                                frame.dispose();
+                                LogInWindow.open();
                             } catch (SQLException ex) {
                                 System.out.println("Error Insert to DB");
                             }
@@ -48,6 +56,9 @@ public class RegisterWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: RegisterWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
             }
         });

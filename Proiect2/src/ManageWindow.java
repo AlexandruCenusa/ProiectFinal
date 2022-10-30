@@ -1,4 +1,5 @@
-import Proiect2.*;
+import Proiect3.*;
+import myLogging.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -35,6 +36,9 @@ public class ManageWindow {
         btnSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnSubmit.getText()+"' din fereastra: ManageWindow";
+                Logger.setLog(str);
+
                 if(txtMarca.getText().isEmpty() || txtModel.getText().isEmpty() || txtKm.getText().isEmpty() || txtPret.getText().isEmpty())
                     JOptionPane.showMessageDialog(null, "Completati toate campurile!");
                 else {
@@ -61,12 +65,18 @@ public class ManageWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: ManageWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
             }
         });
         btnFerVechi.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnFerVechi.getText()+"' din fereastra: ManageWindow";
+                Logger.setLog(str);
+
                 int index = -1;
                 index = listMasini.getSelectedIndex();
                 if(index == -1)

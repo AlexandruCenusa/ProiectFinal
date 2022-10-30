@@ -5,7 +5,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Proiect2.*;
+import Proiect3.*;
+import myLogging.*;
 
 public class MainWindow {
     private JPanel panelMeniu;
@@ -22,6 +23,9 @@ public class MainWindow {
         btnContBancar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: " + btnContBancar.getText()+" din fereastra: MainWindow";
+                Logger.setLog(str);
+
                 if(LoginState.getState() == false)
                     LogInWindow.open();
                 else
@@ -32,6 +36,9 @@ public class MainWindow {
         btnMagazin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnMagazin.getText()+"' din fereastra: 'MainWindow'";
+                Logger.setLog(str);
+
                 MagazinWindow.open(masini);
             }
         });
@@ -39,6 +46,9 @@ public class MainWindow {
         btnGaraj.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnGaraj.getText()+"' din fereastra: MainWindow";
+                Logger.setLog(str);
+
                 GarajWindow.open();
             }
         });
@@ -46,6 +56,9 @@ public class MainWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: MainWindow";
+                Logger.setLog(str);
+
                 System.exit(-1);
             }
         });

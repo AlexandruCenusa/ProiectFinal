@@ -1,4 +1,5 @@
-import Proiect2.*;
+import Proiect3.*;
+import myLogging.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,6 +28,10 @@ public class LogInWindow {
         btnLogIn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                String str = "S-a apasat butonul: '" + btnLogIn.getText()+"' din fereastra: LogInWindow";
+                Logger.setLog(str);
+
                 String nume = txtUsername.getText();
                 char[] parolaC = txtPassword.getPassword();
 
@@ -50,6 +55,9 @@ public class LogInWindow {
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnRegister.getText()+"' din fereastra: LogInWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
                 RegisterWindow.open();
             }
@@ -58,6 +66,9 @@ public class LogInWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: LogInWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
             }
         });

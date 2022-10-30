@@ -2,9 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
+import myLogging.*;
 
-import Proiect2.*;
 public class GarajWindow {
     private static JFrame frame = new JFrame();
     private JPanel panelGaraj;
@@ -21,6 +20,9 @@ public class GarajWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: GarajWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
             }
         });
@@ -28,6 +30,9 @@ public class GarajWindow {
         btnRefresh.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnRefresh.getText()+"' din fereastra: GarajWindow";
+                Logger.setLog(str);
+
                 refreshList();
             }
         });

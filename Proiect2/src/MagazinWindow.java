@@ -4,7 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import Proiect2.*;
+import Proiect3.*;
+import myLogging.*;
 public class MagazinWindow {
     private static ContBancar cont;
     private static ArrayList<Auto> masini;
@@ -27,6 +28,9 @@ public class MagazinWindow {
         btnCumparare.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnCumparare.getText()+"' din fereastra: MagazinWindow";
+                Logger.setLog(str);
+
                 int index = -1;
                 index = listMasini.getSelectedIndex();
                 if (index == -1)
@@ -48,6 +52,9 @@ public class MagazinWindow {
         btnManage.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnManage.getText()+"' din fereastra: MagazinWindow";
+                Logger.setLog(str);
+
                 ManageWindow.open(masini);
             }
         });
@@ -55,6 +62,9 @@ public class MagazinWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: MagazinWindow";
+                Logger.setLog(str);
+
                 frame.dispose();
             }
         });
@@ -62,6 +72,9 @@ public class MagazinWindow {
         btnRefresh.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String str = "S-a apasat butonul: '" + btnRefresh.getText()+"' din fereastra: MagazinWindow";
+                Logger.setLog(str);
+
                 refreshList();
             }
         });
