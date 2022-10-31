@@ -39,3 +39,10 @@ NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Pr
 -implemented a logging system that tracks button activity <br />
 -missing message dialog after the user registered successfuly **(FIXED)** <br />
 
+**Version 0.3: CODE UPDATE 2** *(Stephan)* <br/>
+-added new functions: <br/>
++Cumparare / Gestionare Magazin / Garaj (in database) and much more <br/>
+-LogIn validation in all windows<br/>
+-BUG Fixes<br/>
+-Notch removed Herobrine from the app <br/>
+        
