@@ -34,3 +34,8 @@ NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Pr
 -the information from ContBancar was moved to the database <br/>
 -removed *Edit name* function <br/>
 -some bugs have been fixed </br>
+
+**Version 0.2.5: LOGGING N' STUFF** *(Nick)* <br />
+-implemented a logging system that tracks button activity <br />
+-missing message dialog after the user registered successfuly **(FIXED)** <br />
+
