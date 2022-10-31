@@ -1,7 +1,11 @@
 import javax.swing.*;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import Proiect3.*;
 import myLogging.*;
 
 public class GarajWindow {
@@ -12,8 +16,10 @@ public class GarajWindow {
     private JList listGaraj;
     private JButton btnRefresh;
 
+    private static ArrayList<Auto> garaj = new ArrayList<Auto>();
     public void refreshList() {
-       // listGaraj.setListData(garaj.toArray());
+        DataBase.selectAllFromGaraj(LoginState.getNume(), garaj);
+        listGaraj.setListData(garaj.toArray());
     }
     public GarajWindow() {
         refreshList();

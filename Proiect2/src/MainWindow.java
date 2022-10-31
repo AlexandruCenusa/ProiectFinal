@@ -49,7 +49,13 @@ public class MainWindow {
                 String str = "S-a apasat butonul: '" + btnGaraj.getText()+"' din fereastra: MainWindow";
                 Logger.setLog(str);
 
-                GarajWindow.open();
+                if(LoginState.getState() == true)
+                    GarajWindow.open();
+                else {
+                    int result = JOptionPane.showConfirmDialog(null, "Trebuie sa te loghezi pentru a cumpara! Doresti sa te loghezi?");
+                    if(result == JOptionPane.YES_OPTION)
+                        LogInWindow.open();
+                }
             }
         });
 

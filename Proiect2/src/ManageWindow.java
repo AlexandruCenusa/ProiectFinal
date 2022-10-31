@@ -48,7 +48,7 @@ public class ManageWindow {
                     double pret = Double.parseDouble(txtPret.getText());
 
                     if(masini.size() <= Auto.NR_MAX) {
-                        //masini.add(new Auto(marca, model, km, pret));
+                        masini.add(new Auto(marca, model, km, pret));
                         refreshList();
                     }
                     else

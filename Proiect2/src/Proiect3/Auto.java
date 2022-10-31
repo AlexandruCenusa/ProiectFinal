@@ -14,6 +14,12 @@ public class Auto {
         this.pret = pret;
     }
 
+    public Auto(String marca, String model, int kmt) {
+        this.marca = marca;
+        this.model = model;
+        this.km = km;
+    }
+
     //SETTERS
     public void setMarca(String marca) {
         this.marca = marca;

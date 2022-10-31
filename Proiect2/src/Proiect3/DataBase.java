@@ -1,5 +1,8 @@
 package Proiect3;
+import myLogging.Logger;
+
 import java.sql.*;
+import java.util.ArrayList;
 
 public class DataBase {
     private static Connection con;
@@ -60,5 +63,53 @@ public class DataBase {
         } catch (SQLException ex) {
             System.out.println("Error update");
         }
+    }
+
+    public static void insertIntoGaraj(String proprietar, String marca, String model, int km) {
+        try {
+            setConnection();
+            Statement stm = con.createStatement();
+            String sql = "insert into garaj (proprietar, marca, model, km) values ('" + proprietar + "', '" + marca + "', '" + model + "', '" + km+"');";
+            stm.executeUpdate(sql);
+        }catch(SQLException ex) {
+            System.out.println("Error insert GARAJ");
+            Logger.setLog("Error insert into database");
+        }
+    }
+
+    public static void selectAllFromGaraj(String proprietar, ArrayList<Auto> garaj) {
+        try {
+            setConnection();
+            Statement stm = con.createStatement();
+            ResultSet res = stm.executeQuery("select * from garaj where proprietar like '" + proprietar + "';");
+
+            while(res.next()) {
+                String marca = res.getString("marca");
+                String model = res.getString("model");
+                int km = Integer.parseInt(res.getString("km"));
+                garaj.add(new Auto(marca,model,km));
+            }
+
+
+        }catch(SQLException ex) {
+            System.out.println("Error select GARAJ");
+            Logger.setLog("Error select into database");
+        }
+    }
+
+    public static double getAdminSold() {
+        setConnection();
+        double result = 0;
+        try {
+            PreparedStatement statement = con.prepareStatement("SELECT sold FROM cont WHERE nume like 'admin';");
+            ResultSet res = statement.executeQuery();
+
+            if(res.next())
+                result = Double.parseDouble(res.getString("sold"));
+
+        }catch (SQLException ex) {
+            System.out.println("Error Select From DB");
+        }
+        return result;
     }
 }

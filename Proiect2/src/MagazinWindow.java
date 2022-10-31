@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.JobMessageFromOperator;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +10,6 @@ import myLogging.*;
 public class MagazinWindow {
     private static ContBancar cont;
     private static ArrayList<Auto> masini;
-    private static ArrayList<Auto> garaj;
     private static JFrame frame = new JFrame();
     private JPanel panelMagazin;
     private JButton btnExit;
@@ -28,24 +28,41 @@ public class MagazinWindow {
         btnCumparare.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //LOGGING
                 String str = "S-a apasat butonul: '" + btnCumparare.getText()+"' din fereastra: MagazinWindow";
                 Logger.setLog(str);
 
-                int index = -1;
-                index = listMasini.getSelectedIndex();
-                if (index == -1)
-                    JOptionPane.showMessageDialog(null, "Selectati o masina!");
-                /*
-                else if (cont.retragereNumerarC(masini.get(index).getPret())) {
-                    cont.retragereNumerar(masini.get(index).getPret());
-                    garaj.add(masini.get(index));
-                    masini.remove(index);
-                    refreshList();
-                    JOptionPane.showMessageDialog(null, "Tranzactie efectuata!");
-                } else
-                    JOptionPane.showMessageDialog(null, "Fonduri insuficiente!");
+                if(LoginState.getState() == true) {
+                    int index = -1;
+                    index = listMasini.getSelectedIndex();
+                    if (index == -1)
+                        JOptionPane.showMessageDialog(null, "Selectati o masina!");
+                    else if (cont.retragereNumerarC(masini.get(index).getPret())) {
+                        double sold = masini.get(index).getPret();
+                        cont.retragereNumerar(sold);
 
-                 */
+                        DataBase.updateSoldDB("admin", sold + DataBase.getAdminSold());
+
+                        //Adaugare masina cumparata in baza de date garaj
+                        String marca = masini.get(index).getMarca();
+                        String model = masini.get(index).getModel();
+                        int km = masini.get(index).getKm();
+                        double pret = masini.get(index).getPret();
+                        DataBase.insertIntoGaraj(LoginState.getNume(), marca, model, km);
+
+                        masini.remove(index);
+                        refreshList();
+                        JOptionPane.showMessageDialog(null, "Tranzactie efectuata!");
+                    } else
+                        JOptionPane.showMessageDialog(null, "Fonduri insuficiente!");
+                }
+                else {
+                    int result = JOptionPane.showConfirmDialog(null, "Trebuie sa te loghezi pentru a cumpara! Doresti sa te loghezi?");
+                    if(result == JOptionPane.YES_OPTION){
+                        frame.dispose();
+                        LogInWindow.open();
+                    }
+                }
             }
         });
 
@@ -55,7 +72,18 @@ public class MagazinWindow {
                 String str = "S-a apasat butonul: '" + btnManage.getText()+"' din fereastra: MagazinWindow";
                 Logger.setLog(str);
 
-                ManageWindow.open(masini);
+                try {
+                    if (!LoginState.getNume().equals("admin"))
+                        JOptionPane.showMessageDialog(null, "Acces restrictionat (admin)");
+                    else
+                        ManageWindow.open(masini);
+                }catch(Exception ex) {
+                    int result = JOptionPane.showConfirmDialog(null, "Trebuie sa te loghezi pentru a cumpara! Doresti sa te loghezi?");
+                    if(result == JOptionPane.YES_OPTION){
+                        frame.dispose();
+                        LogInWindow.open();
+                    }
+                }
             }
         });
 

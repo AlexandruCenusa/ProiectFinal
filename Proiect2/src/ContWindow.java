@@ -48,7 +48,7 @@ public class ContWindow {
                 if(txtRetragere.getText().isEmpty())
                     JOptionPane.showMessageDialog(null, "Introduceti o suma pentru retragere!");
                 else {
-                    int bani = Integer.parseInt(txtRetragere.getText());
+                    double bani = Double.parseDouble(txtRetragere.getText());
                     ContBancar.retragereNumerar(bani);
                     refreshSold();
                     txtRetragere.setText("");
@@ -65,7 +65,7 @@ public class ContWindow {
                 if(txtDepunere.getText().isEmpty())
                     JOptionPane.showMessageDialog(null, "Introduceti o suma pentru depunere!");
                 else {
-                    int bani = Integer.parseInt(txtDepunere.getText());
+                    double bani = Double.parseDouble(txtDepunere.getText());
                     ContBancar.depunereNumerar(bani);
                     refreshSold();
                     txtDepunere.setText("");
