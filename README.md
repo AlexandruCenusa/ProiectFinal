@@ -44,5 +44,10 @@ NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Pr
 +Cumparare / Gestionare Magazin / Garaj (in database) and much more <br/>
 -LogIn validation in all windows<br/>
 -BUG Fixes<br/>
--Notch removed Herobrine from the app <br/>
+-removed herobrine <br/>
+
+**Version 0.3.5: THE LAST OF BUG, PART II** *(Nick)* <br/>
+-bug fixes related to data validation(digit characters only **FIXED**) <br/>
+-no more logging in with null parameters <br/>
+-joel lives <br/>
         
