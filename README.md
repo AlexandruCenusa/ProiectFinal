@@ -48,6 +48,6 @@ NOTICE: -change ManageWindow's frame height(changes shall be both visible in: Pr
 
 **Version 0.3.5: THE LAST OF BUG, PART II** *(Nick)* <br/>
 -bug fixes related to data validation(digit characters only **FIXED**) <br/>
--no more logging in with null parameters <br/>
+-authentification with null parameters **FIXED** <br/>
 -joel lives <br/>
         
