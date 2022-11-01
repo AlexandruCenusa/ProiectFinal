@@ -1,5 +1,5 @@
 package Proiect3;
-import myLogging.Logger;
+import myLogging.*;
 
 import java.sql.*;
 import java.util.ArrayList;

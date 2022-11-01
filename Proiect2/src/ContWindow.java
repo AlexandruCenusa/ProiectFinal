@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.JobMessageFromOperator;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -42,41 +43,55 @@ public class ContWindow {
         btnRetragere.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnRetragere.getText()+"' din fereastra: ContWindow";
+                String str = "S-a apasat butonul: '" + btnRetragere.getText()+"' din fereastra: 'ContWindow'";
                 Logger.setLog(str);
 
-                if(txtRetragere.getText().isEmpty())
-                    JOptionPane.showMessageDialog(null, "Introduceti o suma pentru retragere!");
-                else {
-                    double bani = Double.parseDouble(txtRetragere.getText());
-                    ContBancar.retragereNumerar(bani);
-                    refreshSold();
-                    txtRetragere.setText("");
+                try{
+                    if(txtRetragere.getText().isEmpty())
+                        JOptionPane.showMessageDialog(null, "Introduceti o suma pentru retragere!");
+                    else {
+                        double bani = Double.parseDouble(txtRetragere.getText());
+                        ContBancar.retragereNumerar(bani);
+                        refreshSold();
+                        txtRetragere.setText("");
+                    }
                 }
+                catch(NumberFormatException ex) //exceptie neverificata,dar folosita pentru a trata cazul in care s-au introdus caractere litera in loc de cifre
+                {
+                    JOptionPane.showMessageDialog(null,"Eroare. Ati introdus caractere care nu sunt cifre.");
+                }
+
             }
         });
 
         btnDepunere.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnDepunere.getText()+"' din fereastra: ContWindow";
+                String str = "S-a apasat butonul: '" + btnDepunere.getText()+"' din fereastra: 'ContWindow'";
                 Logger.setLog(str);
 
-                if(txtDepunere.getText().isEmpty())
-                    JOptionPane.showMessageDialog(null, "Introduceti o suma pentru depunere!");
-                else {
-                    double bani = Double.parseDouble(txtDepunere.getText());
-                    ContBancar.depunereNumerar(bani);
-                    refreshSold();
-                    txtDepunere.setText("");
+                try{
+                    if(txtDepunere.getText().isEmpty())
+                        JOptionPane.showMessageDialog(null, "Introduceti o suma pentru depunere!");
+                    else {
+                        double bani = Double.parseDouble(txtDepunere.getText());
+                        ContBancar.depunereNumerar(bani);
+                        refreshSold();
+                        txtDepunere.setText("");
+                    }
                 }
+                catch(NumberFormatException ex) //exceptie neverificata,dar folosita pentru a trata cazul in care s-au introdus caractere litera in loc de cifre
+                {
+                    JOptionPane.showMessageDialog(null,"Eroare. Ati introdus caractere care nu sunt cifre.");
+                }
+
             }
         });
 
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: ContWindow";
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: 'ContWindow'";
                 Logger.setLog(str);
 
                 frame.dispose();
@@ -86,7 +101,7 @@ public class ContWindow {
         btnRefresh.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnRefresh.getText()+"' din fereastra: ContWindow";
+                String str = "S-a apasat butonul: '" + btnRefresh.getText()+"' din fereastra: 'ContWindow'";
                 Logger.setLog(str);
 
                 refreshSold();
@@ -97,7 +112,7 @@ public class ContWindow {
         btnLogOut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnLogOut.getText()+"' din fereastra: ContWindow";
+                String str = "S-a apasat butonul: '" + btnLogOut.getText()+"' din fereastra: 'ContWindow'";
                 Logger.setLog(str);
 
                 LoginState.setState(false);

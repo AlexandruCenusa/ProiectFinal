@@ -225,3 +225,63 @@ Mon Oct 31 09:45:39 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra:
 Mon Oct 31 09:45:43 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
 Mon Oct 31 09:45:48 EET 2022: S-a apasat butonul: 'Log Out' din fereastra: ContWindow
 Mon Oct 31 09:45:49 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Mon Oct 31 10:16:49 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Mon Oct 31 10:16:54 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 10:17:12 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 10:17:19 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: ContWindow
+Mon Oct 31 10:21:15 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: MainWindow
+Mon Oct 31 10:21:21 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 10:21:23 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: ContWindow
+Mon Oct 31 10:22:03 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: ContWindow
+Mon Oct 31 11:59:12 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Mon Oct 31 11:59:18 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 11:59:24 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Mon Oct 31 11:59:25 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Mon Oct 31 11:59:27 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Mon Oct 31 11:59:33 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: MagazinWindow
+Mon Oct 31 11:59:34 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Mon Oct 31 11:59:36 EET 2022: S-a apasat butonul: 'Log Out' din fereastra: 'ContWindow'
+Mon Oct 31 11:59:39 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Mon Oct 31 11:59:40 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Mon Oct 31 11:59:51 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Mon Oct 31 11:59:58 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 12:00:10 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Mon Oct 31 12:00:11 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Mon Oct 31 12:00:12 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Mon Oct 31 12:00:14 EET 2022: S-a apasat butonul: 'Adaugare' din fereastra: 'ManageWindow'
+Mon Oct 31 12:00:19 EET 2022: S-a apasat butonul: 'Adaugare' din fereastra: 'ManageWindow'
+Mon Oct 31 12:51:04 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Mon Oct 31 12:51:11 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Mon Oct 31 12:51:14 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: 'ContWindow'
+Mon Oct 31 12:51:17 EET 2022: S-a apasat butonul: 'Submit Retragere' din fereastra: 'ContWindow'
+Mon Oct 31 12:51:19 EET 2022: S-a apasat butonul: 'Submit Depunere' din fereastra: 'ContWindow'
+Mon Oct 31 12:51:20 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Mon Oct 31 12:51:21 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Mon Oct 31 12:51:23 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Mon Oct 31 12:51:27 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ManageWindow'
+Mon Oct 31 12:51:28 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Mon Oct 31 12:51:30 EET 2022: S-a apasat butonul: 'Adaugare' din fereastra: 'ManageWindow'
+Mon Oct 31 12:51:33 EET 2022: S-a apasat butonul: 'Adaugare' din fereastra: 'ManageWindow'
+Mon Oct 31 12:51:33 EET 2022: Eroare. Datele introduse sunt incorecte: acest camp necesita caractere cifra
+Tue Nov 01 17:01:08 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Tue Nov 01 17:01:09 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:01:34 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:05:21 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Tue Nov 01 17:05:22 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:05:23 EET 2022: Error. Failed to log in: Empty parameters.
+Tue Nov 01 17:08:00 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Tue Nov 01 17:08:02 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:08:03 EET 2022: Error. Failed to log in: Empty parameters.
+Tue Nov 01 17:08:11 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:08:11 EET 2022: Error. Failed to log in: Empty parameters.
+Tue Nov 01 17:11:16 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Tue Nov 01 17:11:18 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:11:21 EET 2022: Error. Failed to log in: Empty parameters.
+Tue Nov 01 17:11:23 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:14:59 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Tue Nov 01 17:15:00 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:15:21 EET 2022: Error. Failed to log in: Empty parameters.
+Tue Nov 01 17:15:23 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Tue Nov 01 17:15:28 EET 2022: S-a apasat butonul: 'Register' din fereastra: LogInWindow
+Tue Nov 01 17:15:36 EET 2022: S-a apasat butonul: 'Register' din fereastra: RegisterWindow
+Tue Nov 01 17:15:40 EET 2022: S-a apasat butonul: 'Exit' din fereastra: RegisterWindow

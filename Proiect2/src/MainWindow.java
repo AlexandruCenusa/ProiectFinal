@@ -23,7 +23,7 @@ public class MainWindow {
         btnContBancar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: " + btnContBancar.getText()+" din fereastra: MainWindow";
+                String str = "S-a apasat butonul: " + btnContBancar.getText()+" din fereastra: 'MainWindow'";
                 Logger.setLog(str);
 
                 if(LoginState.getState() == false)
@@ -46,7 +46,7 @@ public class MainWindow {
         btnGaraj.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnGaraj.getText()+"' din fereastra: MainWindow";
+                String str = "S-a apasat butonul: '" + btnGaraj.getText()+"' din fereastra: 'MainWindow'";
                 Logger.setLog(str);
 
                 if(LoginState.getState() == true)
@@ -62,7 +62,7 @@ public class MainWindow {
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: MainWindow";
+                String str = "S-a apasat butonul: '" + btnExit.getText()+"' din fereastra: 'MainWindow'";
                 Logger.setLog(str);
 
                 System.exit(-1);

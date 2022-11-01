@@ -1,3 +1,4 @@
+import CustomException.LogInFailureException;
 import Proiect3.*;
 import myLogging.*;
 
@@ -22,33 +23,48 @@ public class LogInWindow {
     private JButton btnRegister;
     private JLabel lblRegister;
 
+    private void logInOperation() throws LogInFailureException
+    {
+        String str = "S-a apasat butonul: '" + btnLogIn.getText()+"' din fereastra: LogInWindow";
+        Logger.setLog(str);
+
+        String nume = txtUsername.getText();
+        char[] parolaC = txtPassword.getPassword();
+
+        String parola = new String(parolaC);
+
+        DataBase.setConnection();
+        String result = DataBase.selectLogin(nume, parola);
+
+        if(nume.isEmpty() || parola.isEmpty())
+        {
+            JOptionPane.showMessageDialog(null, "User-ul si parola introdusa sunt nule. Inceracati din nou.");
+            throw new LogInFailureException("wrong");
+        }
+
+        if(result == null) {
+            JOptionPane.showMessageDialog(null, "User sau parola incorecta! ");
+        }
+        else {
+            LoginState.setState(true);
+            LoginState.setNume(nume);
+            frame.dispose();
+            ContWindow.open();
+        }
+    }
     public LogInWindow(){
 
 
         btnLogIn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String str = "S-a apasat butonul: '" + btnLogIn.getText()+"' din fereastra: LogInWindow";
-                Logger.setLog(str);
-
-                String nume = txtUsername.getText();
-                char[] parolaC = txtPassword.getPassword();
-
-                String parola = new String(parolaC);
-
-                DataBase.setConnection();
-                String result = DataBase.selectLogin(nume, parola);
-
-
-                if(result == null)
-                    JOptionPane.showMessageDialog(null, "Datele introduse nu sunt corecte!");
-                else {
-                    LoginState.setState(true);
-                    LoginState.setNume(nume);
-                    frame.dispose();
-                    ContWindow.open();
+                try{
+                        logInOperation();
+                }catch(LogInFailureException ex){
+                    Logger.setLog("Error. Failed to log in: Empty parameters.");
+                    System.out.println("Eorare. Datele introduse sunt nule.");
                 }
+
             }
         });
 
