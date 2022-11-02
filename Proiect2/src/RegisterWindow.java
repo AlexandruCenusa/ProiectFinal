@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class RegisterWindow {
 
-    private static JFrame frame = new JFrame("Autoshop Saga 1.0");
+    private static JFrame frame = new JFrame("Register");
     private JPanel registerPanel;
     private JPanel registerInterfacePanel;
     private JTextField txtUsername;

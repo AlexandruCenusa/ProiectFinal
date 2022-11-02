@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import Proiect3.*;
 import myLogging.*;
 public class ContWindow {
-    private static JFrame frame = new JFrame();
+    private static JFrame frame = new JFrame("Gestionare Cont");
     private JPanel panelCont;
     private JButton btnExit;
     private JLabel lblTitlu;

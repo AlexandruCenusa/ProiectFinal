@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class ManageWindow {
     private static ArrayList<Auto> masini;
-    private static JFrame frame = new JFrame();
+    private static JFrame frame = new JFrame("Manage");
     private JPanel panelManager;
     private JButton btnExit;
     private JButton btnSubmit;

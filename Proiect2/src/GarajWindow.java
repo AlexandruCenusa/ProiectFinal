@@ -9,7 +9,7 @@ import Proiect3.*;
 import myLogging.*;
 
 public class GarajWindow {
-    private static JFrame frame = new JFrame();
+    private static JFrame frame = new JFrame("Garaj");
     private JPanel panelGaraj;
     private JPanel panelGarajInterface;
     private JButton btnExit;

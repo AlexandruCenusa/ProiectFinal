@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class LogInWindow {
 
-    private static JFrame frame = new JFrame("AutoShop Saga 1.0");
+    private static JFrame frame = new JFrame("Log In");
 
     private JPanel logInPanel;
     private JPanel logInPanelInterface;

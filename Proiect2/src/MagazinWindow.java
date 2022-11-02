@@ -10,7 +10,7 @@ import myLogging.*;
 public class MagazinWindow {
     private static ContBancar cont;
     private static ArrayList<Auto> masini;
-    private static JFrame frame = new JFrame();
+    private static JFrame frame = new JFrame("Magazin Auto");
     private JPanel panelMagazin;
     private JButton btnExit;
     private JLabel lblTitlu;
