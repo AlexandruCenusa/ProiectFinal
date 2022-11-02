@@ -71,9 +71,12 @@ public class MainWindow {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Proiect 2");
+        JFrame frame = new JFrame("AutoHouse");
         frame.setContentPane(new MainWindow().panelMeniu);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        ImageIcon img = new ImageIcon("src/Icons/icon.png");
+        frame.setIconImage(img.getImage());
 
         frame.setPreferredSize(new Dimension(600, 600));
         frame.setMinimumSize(new Dimension(600, 600));

@@ -16,12 +16,13 @@ public class GarajWindow {
     private JList listGaraj;
     private JButton btnRefresh;
 
-    private static ArrayList<Auto> garaj = new ArrayList<Auto>();
     public void refreshList() {
+        ArrayList<Auto> garaj = new ArrayList<Auto>();
         DataBase.selectAllFromGaraj(LoginState.getNume(), garaj);
         listGaraj.setListData(garaj.toArray());
     }
     public GarajWindow() {
+
         refreshList();
         btnExit.addActionListener(new ActionListener() {
             @Override
