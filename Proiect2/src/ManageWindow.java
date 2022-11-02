@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class ManageWindow {
@@ -24,6 +25,7 @@ public class ManageWindow {
     private JTextField txtModel;
     private JTextField txtPret;
     private JButton btnFerVechi;
+    private JButton btnWipe;
 
     public void refreshList() {
         listMasini.setListData(masini.toArray());
@@ -93,6 +95,19 @@ public class ManageWindow {
                     //masini.remove(index);
                     refreshList();
                 }
+            }
+        });
+        btnWipe.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    DataBase.wipeDB();
+                    JOptionPane.showMessageDialog(null, "Wipe cu succes!");
+                }
+                catch(SQLException ex) {
+                    Logger.setLog("Error db wipe");
+                    JOptionPane.showMessageDialog(null, "Nu s-a putut da wipe");
+            }
             }
         });
     }

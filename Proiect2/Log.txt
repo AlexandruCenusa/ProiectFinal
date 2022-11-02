@@ -342,3 +342,23 @@ Wed Nov 02 11:25:07 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: Garaj
 Wed Nov 02 11:25:08 EET 2022: S-a apasat butonul: 'Garaj' din fereastra: 'MainWindow'
 Wed Nov 02 11:25:15 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: GarajWindow
 Wed Nov 02 11:25:15 EET 2022: S-a apasat butonul: 'Exit' din fereastra: 'MainWindow'
+Wed Nov 02 11:30:23 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Wed Nov 02 11:30:28 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Wed Nov 02 11:30:31 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Wed Nov 02 11:33:14 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Wed Nov 02 11:33:18 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Wed Nov 02 11:33:47 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Wed Nov 02 11:33:48 EET 2022: S-a apasat butonul: 'Garaj' din fereastra: 'MainWindow'
+Wed Nov 02 11:33:49 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Wed Nov 02 11:33:50 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Wed Nov 02 11:38:02 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Wed Nov 02 11:38:04 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Wed Nov 02 11:38:08 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Wed Nov 02 11:38:10 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Wed Nov 02 11:38:11 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Wed Nov 02 11:38:12 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow
+Wed Nov 02 11:41:20 EET 2022: S-a apasat butonul: Gestionare Cont din fereastra: 'MainWindow'
+Wed Nov 02 11:41:24 EET 2022: S-a apasat butonul: 'Log In' din fereastra: LogInWindow
+Wed Nov 02 11:41:26 EET 2022: S-a apasat butonul: 'Inchide' din fereastra: 'ContWindow'
+Wed Nov 02 11:41:27 EET 2022: S-a apasat butonul: 'Magazin Auto' din fereastra: 'MainWindow'
+Wed Nov 02 11:41:28 EET 2022: S-a apasat butonul: 'Administrare Magazin' din fereastra: MagazinWindow

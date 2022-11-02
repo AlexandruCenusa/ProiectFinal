@@ -89,8 +89,6 @@ public class DataBase {
                 int km = Integer.parseInt(res.getString("km"));
                 garaj.add(new Auto(marca,model,km));
             }
-
-
         }catch(SQLException ex) {
             System.out.println("Error select GARAJ");
             Logger.setLog("Error select into database");
@@ -112,4 +110,19 @@ public class DataBase {
         }
         return result;
     }
+
+    public static void wipeDB() throws SQLException{
+            setConnection();
+            Statement stm = con.createStatement();
+
+            String sql = "delete from garaj";
+            stm.executeUpdate(sql);
+
+            sql = "delete from cont";
+            stm.executeUpdate(sql);
+
+            sql = "insert into cont values ('admin', 'admin', 0)";
+            stm.executeUpdate(sql);
+    }
+
 }
